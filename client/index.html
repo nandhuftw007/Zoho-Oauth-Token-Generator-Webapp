@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoho Token Retrieval</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Zoho Token Retrieval</h1>
+
+    <div class="container">
+        <form id="tokenForm">
+            <label for="client_id">Client ID:</label>
+            <input type="text" id="client_id" name="client_id" required><br>
+            <label for="client_secret">Client Secret:</label>
+            <input type="text" id="client_secret" name="client_secret" required><br>
+            <label for="code">Authorization Code:</label>
+            <input type="text" id="code" name="code" required><br>
+
+            <!-- Add this code for the datacenter dropdown -->
+            <label for="datacenter">Datacenter:</label>
+            <select id="datacenter" name="datacenter">
+                <option value="US">US</option>
+                <option value="IN">IN</option>
+                <option value="EU">EU</option>
+            </select><br>
+
+            <div>
+                <input type="submit" value="Get Tokens">
+                <button id="reset_button">Reset ID and Secret</button>
+            </div>
+        </form>
+
+        <div id="tokenResult" class="token-container"></div>
+        <div id="errorMessage" class="error-message"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+	"name": "oauthgenerator2_function",
+	"version": "1.0.0",
+	"main": "index.js",
+	"author": "bharathi.nandhan@zohocorp.com",
+	"dependencies": {
+		"cross-fetch": "^4.0.0",
+		"zcatalyst-sdk-node": "latest"
+	}
+}
